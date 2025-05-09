@@ -1,4 +1,4 @@
-# NWN2 QuickCast
+# NWN2 QuickItems
 
 # WrathPatches is required! Install latest version via ModFinder!!!
 
@@ -7,18 +7,18 @@
 ## Completely save safe, can be installed/uninstalled mid playthrough.
 
 Features:
-*  Works nearly identical to NWN2 Quick Cast
-*  Expandable spell books: click spell book header to show/hide the entire spell book.
+*  Works nearly NWN2 Quick Cast but uses items instead.
+*  Expandable item categories: click item header to show/hide the item type.
 *  Scalable window, use top right button to click and drag to scale window to fit your screen.
 *  Drag window, use top header where it says quick cast to move window.
 *  Resize window, use bottom edge to resize window in Y direction.
 *  Settings button in top right (gears) will allow the binding to hide and show window to be set. This will also allow back color to be set.
-*  Spontaneous metamagic. Spontaneous casters can now pick meta's on the fly.  The spell list will update automatically. Built spells in the meta builder will still work
-*  Conversions can be accessed by two ways.  If they are mandatory, left click will open the conversion window automatically. Optional (object bond, healing, etc..) can be accessed with right click.
+*  Search bar at the top filters items by names 
 
 Planned Features:
-*  Persistence.  Remember meta and header choices.
-*  Mark valid conversions with an indicator.
+*  White/Black lists
+*  Filtering out invalid items
 
 Known Issue:
-* Max meta's is 12, do you really need more than 12?
+*  If an item is used and leaves your inventory the list is refreshed causing the list to snap back to the top.  This is from QuickCast as the list never
+ needed to be updated when visable to the player.  This will not be fixed.
