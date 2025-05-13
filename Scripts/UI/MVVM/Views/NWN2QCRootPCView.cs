@@ -46,7 +46,7 @@ namespace NWN2QuickItems.UI.MVVM.Views
             [HarmonyPostfix]
             private static void Bind()
             {
-                _rootPCViewPrefab = ResourcesLibrary.TryGetResource<GameObject>("a27b35ffed55e50408a77b751471e0b6");
+                _rootPCViewPrefab = ResourcesLibrary.TryGetResource<GameObject>("d9acedc58ec509b409c39fc7656497f7");
 
                 var go = GameObject.Instantiate(_rootPCViewPrefab, WrathHelpers.GetStaticCanvas().transform, false);
                 Root = go.GetComponent<NWN2QCRootPCView>();

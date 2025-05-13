@@ -14,6 +14,7 @@ using Owlcat.Runtime.Core;
 using Owlcat.Runtime.UI.Utility;
 using Kingmaker.Blueprints.Items.Equipment;
 using System;
+using NWN2QuickItems.Settings;
 
 namespace NWN2QuickItems.UI.MVVM.VMs.Panels
 {
@@ -31,7 +32,6 @@ namespace NWN2QuickItems.UI.MVVM.VMs.Panels
         private bool _needUpdateSelection;
         private bool _needsReset;
         private List<ItemEntity> _items = new List<ItemEntity>();
-        private readonly Dictionary<string, bool> _headersExpanded = new Dictionary<string, bool>();
         
         public SpellPanelVM()
         {
@@ -90,14 +90,12 @@ namespace NWN2QuickItems.UI.MVVM.VMs.Panels
                 }
 
                 var headerText = Enum.GetName(typeof(UsableItemType), itemEntity.Key);
-
-                if (!_headersExpanded.ContainsKey(headerText))
-                    _headersExpanded.Add(headerText, false);
-
-                var header = new ClassHeaderElementVM(headerText, _headersExpanded[headerText], itemCollection, (isExpanded) =>
+                var success = Main.Settings.TryGetSetting<HeaderSetting>(SettingKeys.GetHeaderSettingKey(headerText), out var headerSetting);
+                var header = new ClassHeaderElementVM(headerText, success && headerSetting.IsExpanded, itemCollection, (isExpanded) =>
                 {
-                    if (_headersExpanded.ContainsKey(headerText))
-                        _headersExpanded[headerText] = isExpanded;
+                    HeaderSetting setting = success ? headerSetting : new HeaderSetting();
+                    setting.IsExpanded = isExpanded;
+                    Main.Settings.SetSetting<HeaderSetting>(SettingKeys.GetHeaderSettingKey(headerText), setting);
                 });
 
                 _root.AddChild(header);

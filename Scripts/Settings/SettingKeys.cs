@@ -9,7 +9,8 @@ namespace NWN2QuickItems.Settings
     public static class SettingKeys
     {
         public const string MainWindowSetting = "MainWindowSetting";
-        public const string HotKeyShowHide = "HotKeyShowHide";
+        public const string HotKeyShowHide = "HotKeyShowHideItems";
         public const string BackgroundColor = "BackgroundColor";
+        public static string GetHeaderSettingKey(string header) => "HeaderSetting." + header;
     }
 }
