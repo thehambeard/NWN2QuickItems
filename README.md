@@ -1,13 +1,16 @@
 # NWN2 QuickItems
 
-# WrathPatches is required! Install latest version via ModFinder!!!
+> [!WARNING]
+> WrathPatches is required! Install latest version via ModFinder!!!
 
 ## This is an OMM mod, use Modfinder to install!  Unity Mod Manager (UMM) will not work.
-## If you used WotR Inventory Tweaks (Quick Cast). It is a separate mod. It can be kept or removed without harm.
 ## Completely save safe, can be installed/uninstalled mid playthrough.
 
-# DO NOT USE TOYBOX REFILL BELT SLOTS
-# THE LAST BELT SLOT IS USED AND ANYTHING PLACED IN IT WILL BE REPLACED BY THE ITEM USED BY QUICKITEMS.
+> [!WARNING]
+> DO NOT USE TOYBOX REFILL BELT SLOTS
+
+> [!WARNING]
+> THE LAST BELT SLOT IS USED AND ANYTHING PLACED IN IT WILL BE REPLACED BY THE ITEM USED BY QUICKITEMS.
 
 Features:
 *  Works nearly NWN2 Quick Cast but uses items instead.
