@@ -6,6 +6,9 @@
 ## If you used WotR Inventory Tweaks (Quick Cast). It is a separate mod. It can be kept or removed without harm.
 ## Completely save safe, can be installed/uninstalled mid playthrough.
 
+# DO NOT USE TOYBOX REFILL BELT SLOTS
+# THE LAST BELT SLOT IS USED AND ANYTHING PLACED IN IT WILL BE REPLACED BY THE ITEM USED BY QUICKITEMS.
+
 Features:
 *  Works nearly NWN2 Quick Cast but uses items instead.
 *  Expandable item categories: click item header to show/hide the item type.
